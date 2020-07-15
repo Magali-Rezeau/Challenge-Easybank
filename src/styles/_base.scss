@@ -1,0 +1,32 @@
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 1.6rem;
+    color: var(--grayish-blue);
+    font-family: var(--font-family);
+    font-weight: 400;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul li {
+    list-style-type: none;
+}
+
+h1,
+h2,
+h3 {
+    color: var(--dark-blue);
+    font-weight: 700;
+}
+
+.btn {
+    border: none;
+    color: var(--white);
+    // padding: 1rem 3rem;
+    font-size: 1.4rem;
+}
