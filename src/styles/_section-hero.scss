@@ -1,0 +1,98 @@
+.hero {
+    background-color: var(--very-light-gray);
+    height: 70rem;
+    width: 100%;
+    display: flex;
+    background: url('./../assets/images/bg-intro-desktop.svg');
+    background-size: cover;
+    background-position: 55rem -30rem;
+    background-repeat: no-repeat;
+
+    @include md {
+        height: 50rem;
+    }
+
+    @include sm {
+        height: 40rem;
+    }
+
+    @include xs {
+        background: url('./../assets/images/bg-intro-mobile.svg');
+        background-repeat: no-repeat;
+        flex-wrap: wrap-reverse;
+        background-size: contain;
+        height: 80rem;
+    }
+
+    &-text {
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin: auto 0;
+        padding: 0 16rem;
+
+        @include md {
+            padding: 0 5rem;
+        }
+
+        @include xs {
+            width: 100%;
+            align-items: center;
+            text-align: center;
+            padding: 0 2rem;
+        }
+
+        & h1 {
+            font-size: 4.8rem;
+            font-weight: 300;
+            margin-bottom: 3rem;
+
+            @include sm {
+                font-size: 3rem;
+            }
+
+            @include xs {
+                font-size: 4rem;
+            }
+        }
+
+        & p {
+            margin-bottom: 3rem;
+
+            @include sm {
+                font-size: 1.5rem;
+            }
+        }
+    }
+
+    &-img {
+        width: 50%;
+        position: relative;
+
+        @include xs {
+            width: 100%;
+        }
+
+        &-desktop {
+            display: block;
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 95%;
+
+            @include xs {
+                display: none;
+            }
+        }
+
+        &-mobile {
+            display: none;
+
+            @include xs {
+                display: block;
+                width: 100%;
+            }
+        }
+    }
+}
