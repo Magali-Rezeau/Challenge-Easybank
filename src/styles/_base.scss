@@ -42,7 +42,7 @@ h3 {
 }
 
 .btn {
-    background: linear-gradient(to right, var(--lime-green), var(--bright-cyan));
+    background: linear-gradient(to right, hsl(136, 65%, 51%), hsl(192, 70%, 51%));
     color: var(--white);
     padding: 1.4rem 3.6rem;
     border-radius: 20px;
@@ -52,8 +52,7 @@ h3 {
     font-size: 1.4rem;
     color: var(--white);
     &:hover {
-        background: linear-gradient(to left, var(--lime-green), var(--bright-cyan));
+        background: linear-gradient(to left, hsl(136, 65%, 51%), hsl(192, 70%, 51%));
         color: var(--white);
-        transform: translateY(-3px);
     }
 }
