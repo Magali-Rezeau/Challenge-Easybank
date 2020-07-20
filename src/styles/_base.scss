@@ -49,16 +49,11 @@ h3 {
     border: none;
     cursor: pointer;
     transition: all .5s;
-
+    font-size: 1.4rem;
+    color: var(--white);
     &:hover {
         background: linear-gradient(to left, var(--lime-green), var(--bright-cyan));
         color: var(--white);
         transform: translateY(-3px);
-
-    }
-
-    & a {
-        font-size: 1.4rem;
-        color: var(--white);
     }
 }
